@@ -10,8 +10,7 @@ use SilverStripe\Forms\FieldList;
 
 class ElementalElementSwitcherExtension extends Extension {
 
-    public function updateCMSActions(FieldList $actions) {
-
+    public function updateCMSActions(FieldList $actions): void {
         $rootTabSet = TabSet::create('SwitchActionMenus');
         $dropUpContainer = Tab::create(
             'SwitchMoreOptions',
@@ -22,8 +21,8 @@ class ElementalElementSwitcherExtension extends Extension {
         $rootTabSet->addExtraClass('ss-ui-action-tabset action-menus btn-element-switcher btn-outline-primary');
 
         // get all siblings and create edit links
-        $mySiblings = $this->owner->Parent()->Elements()->exclude([
-            'ID' => $this->owner->ID
+        $mySiblings = $this->getOwner()->Parent()->Elements()->exclude([
+            'ID' => $this->getOwner()->ID
         ]);
         $myLinks = '';
         foreach ($mySiblings as $sibling) {
@@ -32,7 +31,7 @@ class ElementalElementSwitcherExtension extends Extension {
             if ($sibling->Title == "") {
                 $myLinkTitle = _t(__CLASS__ . '.NoTitle', 'No title') . ' ' . $sibling->ID;
             }
-            
+
             $myLinks .= '<a href="' . $sibling->CMSEditLink() . '" class="btn">' . $myLinkTitle . '</a><br>';
         }
 
@@ -44,8 +43,8 @@ class ElementalElementSwitcherExtension extends Extension {
 
         $dropUpContainer->push($myAction);
 
-        
+
         $actions->push($rootTabSet);
     }
-    
+
 }

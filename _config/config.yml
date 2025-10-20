@@ -1,8 +1,12 @@
-# see https://docs.silverstripe.org/en/developer_guides/configuration/configuration/
+---
+Name: silverstripe-element-switcher
+After: elemental
+---
+
 DNADesign\Elemental\Models\BaseElement:
   extensions:
     - Kalakotra\SilverstripeElementSwitcher\Extensions\ElementalElementSwitcherExtension
 
 SilverStripe\Admin\LeftAndMain:
   extra_requirements_css:
-    - "kalakotra/silverstripe-element-switcher:client/dist/styles/element-switcher.css"
+    - "moritz-sauer-13/silverstripe-element-switcher:client/dist/styles/element-switcher.css"

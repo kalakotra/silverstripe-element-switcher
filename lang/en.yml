@@ -1,0 +1,5 @@
+en:
+  Kalakotra\SilverstripeElementSwitcher\Extensions\ElementalElementSwitcherExtension:
+    SwitchMoreOptions: "Switch Element"
+    NoTitle: "No title"
+    PopupInfo: "Switch to Element:"

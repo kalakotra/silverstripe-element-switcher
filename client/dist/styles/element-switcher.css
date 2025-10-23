@@ -7,7 +7,6 @@
   color: #008a00 !important;
 }
 
-.ui-widget-content a, .ui-widget a:hover,
-.ui-widget.ui-widget-content a:hover {
+.btn-element-switcher .ui-widget-content a.btn:hover {
   color: #fff;
 }

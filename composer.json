@@ -1,5 +1,5 @@
 {
-    "name": "moritz-sauer-13/silverstripe-element-switcher",
+    "name": "kalakotra/silverstripe-element-switcher",
     "description": "This module provides simplified navigation between elemental elements.",
     "type": "silverstripe-vendormodule",
     "keywords": [

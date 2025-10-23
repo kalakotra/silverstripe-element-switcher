@@ -9,4 +9,4 @@ DNADesign\Elemental\Models\BaseElement:
 
 SilverStripe\Admin\LeftAndMain:
   extra_requirements_css:
-    - "moritz-sauer-13/silverstripe-element-switcher:client/dist/styles/element-switcher.css"
+    - "kalakotra/silverstripe-element-switcher:client/dist/styles/element-switcher.css"
